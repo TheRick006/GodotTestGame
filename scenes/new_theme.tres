@@ -1,0 +1,29 @@
+[gd_resource type="Theme" format=3 uid="uid://ckcf5um3i0tm8"]
+
+[ext_resource type="FontFile" uid="uid://dyqe8jx7f8s" path="res://fonts/Xolonium-Regular.ttf" id="1_bef4n"]
+[ext_resource type="Texture2D" uid="uid://dji6l33vtax4w" path="res://art/assets/button/Button.png" id="2_hku0e"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bef4n"]
+texture = ExtResource("2_hku0e")
+
+[sub_resource type="FontVariation" id="FontVariation_1320d"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oycau"]
+bg_color = Color(0.43405715, 0.7971453, 0.815826, 0.57600003)
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.48628834, 0.48628834, 0.48628834, 1)
+border_blend = true
+
+[resource]
+default_base_scale = 1.0
+Button/colors/font_color = Color(0.5135, 0.64772505, 0.65, 1)
+Button/font_sizes/font_size = 40
+Button/fonts/font = ExtResource("1_bef4n")
+Button/styles/normal = SubResource("StyleBoxTexture_bef4n")
+Label/colors/font_color = Color(0.26341096, 0.6852391, 0.48075712, 1)
+Label/colors/font_outline_color = Color(0.41366336, 0.7368616, 0.5893299, 1)
+Label/constants/outline_size = 5
+Label/font_sizes/font_size = 32
+Label/fonts/font = SubResource("FontVariation_1320d")
+Panel/styles/panel = SubResource("StyleBoxFlat_oycau")

@@ -1,0 +1,60 @@
+[gd_scene format=4 uid="uid://buxfd3lcph1om"]
+
+[ext_resource type="Texture2D" uid="uid://bddhr60av103q" path="res://art/Tilesets/Background Tilemap.png" id="1_hk6qi"]
+[ext_resource type="Texture2D" uid="uid://crfm83iu7bty0" path="res://art/Tilesets/Foreground Atlas.png" id="1_pwcy2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5ekxl"]
+texture = ExtResource("1_hk6qi")
+texture_region_size = Vector2i(500, 700)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hcnff"]
+tile_size = Vector2i(500, 700)
+sources/1 = SubResource("TileSetAtlasSource_5ekxl")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hiskw"]
+texture = ExtResource("1_pwcy2")
+texture_region_size = Vector2i(100, 100)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(16.000435, -50, 16.081646, -16.853237, -16.893852, -17.096903, -17.056293, 16.041035, -50, 15.959816, -50, 50, 50, 50, 50, -50)
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-50, -50, 50, -50, 50, 50, -50, 50)
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hhx0m"]
+tile_size = Vector2i(100, 100)
+physics_layer_0/collision_layer = 16
+physics_layer_0/collision_mask = 128
+sources/1 = SubResource("TileSetAtlasSource_hiskw")
+
+[node name="Levels" type="Node2D" unique_id=501028229]
+
+[node name="Tilemap Layers" type="Node2D" parent="." unique_id=502687615]
+
+[node name="Background" type="TileMapLayer" parent="Tilemap Layers" unique_id=869102305]
+tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_hcnff")
+
+[node name="Foreground" type="TileMapLayer" parent="Tilemap Layers" unique_id=765385356]
+tile_map_data = PackedByteArray("AAABAAYAAQABAAAAAAADAAYAAQABAAAAABADAAcAAQAAAAIAAGACAAcAAQAAAAIAAGABAAcAAQAAAAIAAGAAAAcAAQAAAAEAAGAEAAcAAQAAAAEAAFACAAYAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_hhx0m")

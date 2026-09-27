@@ -1,0 +1,13 @@
+# Godot 4+ specific ignores
+.godot/
+*.uid
+
+/android/
+.vs/
+
+art/assets/aseprite
+addons/
+
+.editorconfig
+*.import
+*.tmp

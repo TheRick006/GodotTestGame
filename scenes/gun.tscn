@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://u5f8vx8ookwg"]
+
+[ext_resource type="Script" uid="uid://cfwr00wiv3vfr" path="res://_domain/Gun.cs" id="1_og67c"]
+[ext_resource type="Texture2D" uid="uid://dpw2noy3guu3o" path="res://art/ExampleShotgun.png" id="1_x77fm"]
+[ext_resource type="PackedScene" uid="uid://bwlqwybj4g3su" path="res://scenes/bullet.tscn" id="2_gp1hk"]
+
+[node name="Gun" type="Node2D" unique_id=725180816]
+script = ExtResource("1_og67c")
+BulletScene = ExtResource("2_gp1hk")
+
+[node name="ExampleShotgun" type="Sprite2D" parent="." unique_id=3472546]
+position = Vector2(13, -2)
+texture = ExtResource("1_x77fm")
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=2044065797]
+position = Vector2(35, -2)
